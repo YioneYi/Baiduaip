@@ -24,7 +24,7 @@ def bs64code(frame):
 
 def faceDete(imageType, options):
     # times = 0
-    capture = cv2.VideoCapture('rtsp://admin:dnY1230456@10.206.148.179:554/Streaming/Channels/101')
+    capture = cv2.VideoCapture(0)
     fps = capture.get(cv2.CAP_PROP_FPS)
     print('fps:', fps)
     while True:
@@ -42,7 +42,7 @@ def faceDete(imageType, options):
         else:
             result = info['result']
             # print('result:', result)
-            if (result['face_list'][0]['face_probability'] > 0.99):
+            if (result['face_list'][0]['face_probability'] > 0.9):
                 faceNum = result['face_num']
                 print("faceNum:", faceNum)
 
