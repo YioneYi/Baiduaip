@@ -5,9 +5,9 @@ import base64
 from PIL import Image
 from io import BytesIO
 
-APP_ID = '19535352'
-API_KEY = '3GGqRFy2OPtDyVzZbuuxrbwV'
-SECRET_KEY = 'hGQmC4stnXCnjw5Mw0naXbk9wwNWSFwS'
+APP_ID = 'xxx'
+API_KEY = 'xxx'
+SECRET_KEY = 'xxx'
 
 client = AipFace(APP_ID, API_KEY, SECRET_KEY)
 
