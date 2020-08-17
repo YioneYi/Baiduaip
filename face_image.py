@@ -4,9 +4,9 @@ import base64
 import cv2
 import numpy as np
 
-APP_ID = '19535352'
-API_KEY = '3GGqRFy2OPtDyVzZbuuxrbwV'
-SECRET_KEY = 'hGQmC4stnXCnjw5Mw0naXbk9wwNWSFwS'
+APP_ID = 'xxx'
+API_KEY = 'xxx'
+SECRET_KEY = 'xxx'
 
 
 def bs64code(imgs):
