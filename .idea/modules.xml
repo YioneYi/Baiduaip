@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../ArcFace-python-master/.idea/ArcFace-python-master.iml" filepath="$PROJECT_DIR$/../ArcFace-python-master/.idea/ArcFace-python-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Baiduaip.iml" filepath="$PROJECT_DIR$/.idea/Baiduaip.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mtcnn/.idea/MTCNN-Tensorflow.iml" filepath="$PROJECT_DIR$/../mtcnn/.idea/MTCNN-Tensorflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PycharmProjects/.idea/PycharmProjects.iml" filepath="$PROJECT_DIR$/../PycharmProjects/.idea/PycharmProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../FaceRecognition/.idea/faceRecognition.iml" filepath="$PROJECT_DIR$/../FaceRecognition/.idea/faceRecognition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../RealTimeFaceRecognize/.idea/real_time_face_recognize.iml" filepath="$PROJECT_DIR$/../RealTimeFaceRecognize/.idea/real_time_face_recognize.iml" />
+    </modules>
+  </component>
+</project>
