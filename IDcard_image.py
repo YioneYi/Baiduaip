@@ -18,10 +18,11 @@ response = requests.get(host)
 print(response)
 if response:
     print(response.json())
-
 '''
+
+# 先使用上面的代码生成access_token
 request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/idcard"
-access_token = 'xxx' #上面的代码会生成access_token
+access_token = 'xxx' 
 request_url = request_url + "?access_token=" + access_token
 headers = {'content-type': 'application/x-www-form-urlencoded'}
 
@@ -36,7 +37,7 @@ def bs64code(imgs):
 def oneImgTest():
     s = time.time()
 
-    img = bs64code(r'1.jpg')
+    img = bs64code(r'IDCard\img\front\1.jpg')
     params = {"id_card_side": "front", "image": img}
 
     postnum = 1
