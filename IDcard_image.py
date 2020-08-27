@@ -6,15 +6,14 @@ import os
 
 '''
 身份证识别
-'access_token': '24.e9119afec7af049024f055d3aae0ba2d.2592000.1600930177.282335-10766749'
-# E:\PycharmProjects\IDCard\img\frontXYZ
 '''
 
 '''
+# 查看access_token。
 # client_id 为官网获取的AK， client_secret 为官网获取的SK
 host = 'https://aip.baidubce.com/oauth/2.0/token?' \
-       'grant_type=client_credentials&client_id=KRBEoWjLgTuQkOZgf5ffGFrx&' \
-       'client_secret=vhGzm0LSmnNu3jc1ETnAVUjKrGV9GZ7Y'
+       'grant_type=client_credentials&client_id=xxx&' \
+       'client_secret=xxx'
 response = requests.get(host)
 print(response)
 if response:
@@ -22,7 +21,7 @@ if response:
 
 '''
 request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/idcard"
-access_token = '[24.e9119afec7af049024f055d3aae0ba2d.2592000.1600930177.282335-10766749]'
+access_token = 'xxx' #上面的代码会生成access_token
 request_url = request_url + "?access_token=" + access_token
 headers = {'content-type': 'application/x-www-form-urlencoded'}
 
@@ -37,7 +36,7 @@ def bs64code(imgs):
 def oneImgTest():
     s = time.time()
 
-    img = bs64code(r'E:\PycharmProjects\IDCard\img\front\1.jpg')
+    img = bs64code(r'1.jpg')
     params = {"id_card_side": "front", "image": img}
 
     postnum = 1
@@ -55,7 +54,7 @@ def oneImgTest():
 
 
 def batchImgTest():
-    sourceImgPath = r'E:\PycharmProjects\IDCard\img\front'
+    sourceImgPath = r'IDCard\img\front'
     allImg = os.listdir(sourceImgPath)
     imgPath = []
     for item in allImg:
